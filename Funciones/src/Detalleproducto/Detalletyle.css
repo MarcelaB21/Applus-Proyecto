@@ -1,0 +1,25 @@
+body{
+    background:#395569; 
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+    background:#C25522;
+}
+th,td{
+    border:1px solid #ddd;
+    padding: 8px;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+#tablaExistencias {
+    display: none; /* Ocultar la tabla inicialmente */
+    font-size: 18px; /* Tamaño de la fuente de la tabla */
+}
+
+#tablaExistencias th, #tablaExistencias td {
+    padding: 10px; /* Espaciado interno de las celdas */
+}

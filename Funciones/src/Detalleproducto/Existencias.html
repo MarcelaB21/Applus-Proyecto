@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Existencias de productos</title>
+    <link rel="stylesheet" href="Detalletyle.css">
+</head>
+<body>
+    <h1>Buscar Existencias de productos</h1>
+    <input type="text" id="inputBusqueda" placeholder="Buscar producto...">
+    <button  onclick="buscarExistencia()" >Buscar</button>
+
+    <table id="tablaExistencias">
+        <thead>
+            <tr>
+                <th >Producto</th>
+                <th >Existencia</th>
+            </tr>
+        </thead>
+        <tbody id="tbodyExistencias">
+        </tbody>
+    </table>
+     
+    <script src="style.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+/*Nuevo Inicio */
+
+body{
+    background: #395569;
+   
+   }
+  
+ .fm-control{
+    
+     margin-bottom:20px;
+     position:relative;
+     float:left;
+     width: 45%;
+     margin-right: 5px;
+ 
+     
+ 
+ }
+ .fm-control label{
+     margin-bottom:5px;
+     display:block;
+     
+ }
+ 
+ .fm-control input{
+     width:50%;
+     border-bottom: 100px black;
+     
+     
+     
+ }
+ 
+ .fm-control textarea{
+     width:50%;
+     height:15%;
+     
+    
+    
+ }
+ .fm-control  #guardar, .fm-control #modificar{
+    background:#D77231 ;
+    width: 20%;
+    height: 50%;
+    box-shadow: 5px;
+    
+ }
+ 
+ /*Nuevo Fin */

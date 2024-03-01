@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Link de paginas invocadas --->
+    
+     <link rel="stylesheet" href="src/Detalleproducto/Existencias.html">
+     <link rel="stylesheet" href="src/Entrada/NuevoProducto.html">
+    
+    
+    
+    <title>Inventario</title>
+   <!---Link de paginas ancladas --->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Jquery/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css">
+    
+
+
+    <script src="Jquery/jquery-1.6.3.min.js"></script>
+    <script src="Jquery/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript" src="Carpetajs/nav2.2.js"></script>
+   
+    
+  <!---Codigo javascript --->
+    <script>
+
+    		$(document).ready(function(){
+            
+                
+               $("#boton").toggle(function(){
+                    $("#menu").animate({
+                        left:"0px"
+                    });
+                },
+                 function(){
+                    $("#menu").animate({
+                        left:"-210px"
+                    });
+                 });
+               
+               $(".JqueryMenu").navPlugin({
+					'itemWidth': 'auto',
+					'itemHeight': 30,
+					'navEffect': 'slide',
+					'speed': 200
+				});
+              
+        
+     
+       
+
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        
+        $(".iframe").fancybox({
+            width:"90%",
+            height:"90%",
+            titlePosition:"outside"
+        
+          });
+            
+    })
+    
+</script>
+    
+        
+         
+    
+
+			
+
+  <!---CODIGO CON HTML --->              
+    
+    
+
+</head>
+<body id="principal">
+    
+    <div id="m_superior"><form action="#">
+        <p>
+            
+           <input type="search" name="busqueda" >
+           <input type="submit" value="Buscar">
+        </p>
+    </form>
+</div> 
+    
+    
+
+        
+ 
+        
+    
+
+
+    <div id="menu" style="left: 0px;">
+      <div id="boton">x</div>
+      <div id="logo"><img src="imagenes/logo.png" alt="app"></div>
+       <ul class="JqueryMenu">
+        <li><a href="#">Productos</a>
+            <ul >
+                <li ><a href="#">Detalles Del Producto</a>
+                
+                    <ul id="opcion" >
+                        <li><a href="src/Detalleproducto/Existencias.html" title="Existencias" class="iframe"> Existencias </a></li>
+                        <li><a href="#">Faltantes</a></li>
+                        
+                    </ul>
+                
+            </ul>
+        <li><a href="#">Entradas</a>
+            <ul>
+                <li><a href="#">Nuevos Productos  </a>
+                 
+                    <ul id="opcion" >
+                        <li><a href="src/Entrada/NuevoProducto.html" title="NuevoProducto" class="iframe">Reguistrar </a></li>
+                        <li><a href="#">Eliminar </a></li>
+                        
+                    </ul>
+                    
+                   
+            </ul>
+        <li><a href="#">Salida</a>
+            <ul>
+                <li><a href="#">H</a></li>
+                
+                   
+            </ul>
+        </li>
+        <li><a href="#">Provedores</a>
+            <ul>
+                <li><a href="#">K</a></li>
+               
+                   
+            </ul></li>
+        <li><a href="#">Reportes</a>
+            <ul>
+                <li><a href="#">Ñ</a></li>
+                
+            </ul></li>
+    </ul>
+
+    </div>   
+       
+    
+
+   
+    <footer id="P-pagina">
+            <p>Rellenar </p>
+    </footer>
+   
+    
+</body>
+</html>
