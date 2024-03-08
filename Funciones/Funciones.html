@@ -4,156 +4,181 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Document</title>
     <!---Link de paginas invocadas --->
-    
-     <link rel="stylesheet" href="src/Detalleproducto/Existencias.html">
-     <link rel="stylesheet" href="src/Entrada/NuevoProducto.html">
-    
-    
-    
-    <title>Inventario</title>
-   <!---Link de paginas ancladas --->
+  
+    <link rel="stylesheet" href="src/Detalleproducto/Existencias.html">
+    <link rel="stylesheet" href="src/Entrada/NuevoProducto.html">
+    <!-- Enlaces a Bootstrap y jQuery -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="Jquery/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css">
     
 
-
+   <!-- Estilos y scripts de FancyBox -->
     <script src="Jquery/jquery-1.6.3.min.js"></script>
     <script src="Jquery/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
-    <script type="text/javascript" src="Carpetajs/nav2.2.js"></script>
-   
     
-  <!---Codigo javascript --->
+
+    <!-- Scripts personalizados -->
     <script>
-
-    		$(document).ready(function(){
-            
-                
-               $("#boton").toggle(function(){
-                    $("#menu").animate({
-                        left:"0px"
-                    });
-                },
-                 function(){
-                    $("#menu").animate({
-                        left:"-210px"
-                    });
-                 });
-               
-               $(".JqueryMenu").navPlugin({
-					'itemWidth': 'auto',
-					'itemHeight': 30,
-					'navEffect': 'slide',
-					'speed': 200
-				});
-              
-        
-     
-       
-
-    });
-</script>
-<script>
-    $(document).ready(function(){
-        
-        $(".iframe").fancybox({
-            width:"90%",
-            height:"90%",
-            titlePosition:"outside"
-        
+      $(document).ready(function(){
+          $(".iframe").fancybox({
+              type: 'iframe',
+              width: 800,
+              height: 600,
+              titlePosition: "outside"
           });
-            
-    })
-    
-</script>
-    
-        
-         
-    
-
-			
-
-  <!---CODIGO CON HTML --->              
+      });
+    </script>
     
     
-
+    
 </head>
 <body id="principal">
-    
-    <div id="m_superior"><form action="#">
-        <p>
-            
-           <input type="search" name="busqueda" >
-           <input type="submit" value="Buscar">
-        </p>
-    </form>
-</div> 
-    
-    
 
-        
+  <nav class="navbar navbar-dark navbar-light bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="imagenes/logo.png" alt="1" width="150px" ></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu Amigo </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item iframe" href="src/Detalleproducto/Existencias.html" title="Existencias" > Existencias </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Faltantes</a></li>
+              </ul>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Entrada 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item iframe" href="src/Entrada/NuevoProducto.html" title="NuevoProducto"  >Reguistrar Nuevo Producto   </a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Salida
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item iframe"  > Something else here </a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Provedores 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item iframe" > Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reportes
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item iframe"  > Something else here </a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
  
-        
-    
+  <div class="container">
+  <div class="row mt-4">
+  <div class="col-md-6 mb-4 ">
+  <div class="card costum-card" >
+    <img src="https://img.freepik.com/premium-photo/large-clean-warehouse-storage-room-with-boxes-merchandise-generative-ai_634358-850.jpg" class="card-img-top" alt="img1"  >
+    <div class="card-body">
+     <a href="#" class="btn btn-primary">Bodega</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-6  ">
+  <div class="card costum-card" >
+    <img src="https://www.cepal.org/sites/default/files/styles/1920x1080/public/images/featured/76_0.jpg?itok=ULQbOmdn" class="card-img-top" alt="img2">
+    <div class="card-body">
+    <a href="#" class="btn btn-primary">Estadisticas</a>
+    </div>
+  </div>
+</div>
+<div class="col-md-6    ">
+  <div class="card costum-card" >
+    <img src="https://www.nueva-iso-9001-2015.com/wp-content/uploads/2020/11/Auditoria-interna-remota.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+     <a href="#" class="btn btn-primary">Auditoria </a>
+    </div>
+  </div>
+</div>
+<div class="col-md-6  ">
+  <div class="card costum-card" >
+    <img src="https://storage.googleapis.com/twg-content/original_images/sustainability-thumbnail.original_8YExgdc.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+    <a href="#" class="btn btn-primary">Devoluciones</a>
+    </div>
+  </div>
+</div>
 
 
-    <div id="menu" style="left: 0px;">
-      <div id="boton">x</div>
-      <div id="logo"><img src="imagenes/logo.png" alt="app"></div>
-       <ul class="JqueryMenu">
-        <li><a href="#">Productos</a>
-            <ul >
-                <li ><a href="#">Detalles Del Producto</a>
-                
-                    <ul id="opcion" >
-                        <li><a href="src/Detalleproducto/Existencias.html" title="Existencias" class="iframe"> Existencias </a></li>
-                        <li><a href="#">Faltantes</a></li>
-                        
-                    </ul>
-                
-            </ul>
-        <li><a href="#">Entradas</a>
-            <ul>
-                <li><a href="#">Nuevos Productos  </a>
-                 
-                    <ul id="opcion" >
-                        <li><a href="src/Entrada/NuevoProducto.html" title="NuevoProducto" class="iframe">Reguistrar </a></li>
-                        <li><a href="#">Eliminar </a></li>
-                        
-                    </ul>
-                    
-                   
-            </ul>
-        <li><a href="#">Salida</a>
-            <ul>
-                <li><a href="#">H</a></li>
-                
-                   
-            </ul>
-        </li>
-        <li><a href="#">Provedores</a>
-            <ul>
-                <li><a href="#">K</a></li>
-               
-                   
-            </ul></li>
-        <li><a href="#">Reportes</a>
-            <ul>
-                <li><a href="#">Ñ</a></li>
-                
-            </ul></li>
-    </ul>
 
-    </div>   
-       
-    
+</div>
+</div>
 
-   
-    <footer id="P-pagina">
-            <p>Rellenar </p>
-    </footer>
-   
-    
+
+  
+  <footer id="P-pagina">
+     <p>Bienvenido al sistema APPLUS.SA</p>
+  </footer>
+
+ <!-- Scripts de Bootstrap -->
+ <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+
+ 
+ 
+
 </body>
 </html>

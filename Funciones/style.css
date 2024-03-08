@@ -3,127 +3,59 @@
 
 /*Inicio cuerpo*/
 #principal {
-   background-image: linear-gradient(
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)),
-    url(https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ;
+    background-image: url(imagenes/fondo-E.jpg);
     background-repeat: no-repeat;
     background-position:top ;
     background-size: cover;
-     height: 45em;
-    display:flex;
-    align-items: center;
-   
-   
-}
-#m_superior {
-    /*cabecera */
-    background:rgb(81, 88, 88) ;
-    color: #220908;
-    height: 40px;
-    width: 100%;
-    left: 0;
-    top:0;
-    position: fixed;
-    margin: 0 auto ;
+    
    
     
     
+   
+}
+
+.card{
+    height: 100%;
+}
+.card-img-top{
+    height: 100%;
+    object-fit: cover;
+}
+.costum-card{
+    height: 200px !important;
+    width: 230px;
 }
 
 
-#m_superior form{
-    float: right;
-    
-
+.offcanvas-body{
+    background-color:#706f6e ;
 }
 
+
+.container-fluid{
+    background:#706f6e; 
+    }
 
 
 
 #P-pagina {
-    background:rgb(81, 88, 88) ;
-    color: #B13D24;
-    height: 40px;
+    background:#706f6e ; 
+    font:italic bold normal 20px Georgia ,"Times New Roman ", Times ,serif;
+    color: black;
+    height: 40px ;
     width: 100%;
+    box-shadow:inset  0  5px  black ; 
     left: 0;
     bottom:0;
     position: fixed;
     margin: 0 auto ;
     text-align: center;
+    padding-top:20px;
 }
 
 /*cuerpo fin */
 
-/*Inicio diseño menu */
-#menu{
-    position: absolute;
-    left:-210px;
-    top:0px;
-    width:213px;
-    height: 700px;
-    background-color: #484442;
-    padding:15px;
-}
 
-#boton{
-    font-size: 1.2em;
-    font-weight: bolder;
-    position: absolute;
-    left: 216px;
-    top: 5px;
-    width: 21px;
-    height:25px;
-    z-index:1;
-    cursor: pointer
-    
-
-
-}
-li {
-    position:relative;
-    display:block;
-    white-space:nowrap;
-    margin: 20px;
- }
- li ul{
-    width:0;
-   }
-
-
-a {background:transparent;
-    line-height:28px;
-    padding:0 20px;
-    font-size:14px;
-    color:#fff!important;
-    text-decoration:none;
-    font-weight:bold;
-    display:block;
-    height:auto;
-    width:auto;
-    border-top:1px solid #ccc;
-    
-    
-    border-bottom:1px solid #999;
-    height:28px;
-    width:auto;
-   }
-   #opcion {
-    position:absolute;
-    display: block;
-    top:0;
-    width:0;
-    left:0;
-    margin-left:0;
-    height:0;}
-   
-
-   #logo{
-      border-bottom: 2px solid #292625;
-   }
-
-
-/*FIN diseño menu */
 
 /*Fin Pagina principal */
 
